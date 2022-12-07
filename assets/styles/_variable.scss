@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+$primary: #4a6cd0;
+$brown: #c08c0f;
+$yellow: #FFD873;
+$border-radius: 0;
+$transition: .4s ease;
+
+:root {
+    --bs-font-sans-serif: Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    --bs-heading-font-sans-serif: Montserrat, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    --bs-primary-rgb: 74, 108, 208;
+    --bs-primary: rgb(var(--bs-primary-rgb));
+    --bs-success-rgb: 50, 166, 145;
+    --bs-success: rgb(var(--bs-success-rgb));
+    --bs-info-rgb: 121, 146, 220;
+    --bs-info: rgb(var(--bs-info-rgb));
+    --bs-secondary-rgb: 192, 140, 15;
+    --bs-secondary: rgb(var(--bs-secondary-rgb));
+
+    --bs-gray-dark: #4F4F4F;
+    --bs-gray-light: #E4E4E4;
+    --bs-yellow: #{$yellow};
+    --bs-brown: #{$brown};
+
+    --transition: .3s ease;
+}
+
+

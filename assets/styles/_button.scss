@@ -1,0 +1,41 @@
+.btn-primary {
+    --bs-btn-bg: var(--bs-primary);
+}
+
+.btn-primary,
+.btn-outline-primary {
+    --bs-btn-border-color: var(--bs-primary);
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--bs-primary);
+    --bs-btn-hover-bg: var(--bs-primary);
+}
+
+.btn-success {
+    --bs-btn-bg: var(--bs-success);
+}
+
+.btn-success,
+.btn-outline-success {
+    --bs-btn-border-color: var(--bs-success);
+}
+
+.btn-outline-success {
+    --bs-btn-color: var(--bs-success);
+    --bs-btn-hover-bg: var(--bs-success);
+}
+
+.btn-info {
+    --bs-btn-bg: var(--bs-info);
+}
+
+.btn-info,
+.btn-outline-info {
+    --bs-btn-border-color: var(--bs-info);
+}
+
+.btn-outline-info {
+    --bs-btn-color: var(--bs-info);
+    --bs-btn-hover-bg: var(--bs-info);
+}

@@ -1,0 +1,18 @@
+body.darkmode,
+body.darkmode .dashboard-wrapper > main,
+body.darkmode .offcanvas,
+body.darkmode .bg-white {
+    color: var(--bs-light) !important;
+    background-color: var(--bs-gray-800) !important;
+}
+
+
+body.darkmode .nav-link {
+    --bs-nav-link-hover-color: var(--bs-white) !important;
+    --bs-nav-link-color: var(--bs-light) !important;
+}
+
+body.darkmode .nav-link.active,
+body.darkmode .navbar-brand {
+    color: var(--bs-light) !important;
+}
