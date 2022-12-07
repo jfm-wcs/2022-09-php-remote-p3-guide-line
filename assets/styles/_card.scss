@@ -1,0 +1,39 @@
+.card {
+    --bs-card-border-width: 0;
+    transition: filter var(--transition);
+}
+
+.card.active,
+.card:hover {
+    filter: brightness(100%);
+}
+.card-title,
+.card-text{
+    font-family: var(--bs-heading-font-sans-serif);
+}
+
+.card-title {
+    color: var(--bs-gray-dark);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.card-text {
+    font-size: .875rem;
+}
+
+.card-text a {
+    color: inherit;
+}
+
+.card--challenge {
+    --bs-card-bg: #{$yellow};
+}
+
+.card--challenge .icon-identifier {
+    --icon-bg: var(--bs-brown);
+}
+
+.card--not-done {
+    filter: brightness(70%);
+}

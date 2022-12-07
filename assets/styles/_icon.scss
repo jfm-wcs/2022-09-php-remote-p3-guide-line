@@ -1,0 +1,18 @@
+.icon-identifier {
+    --icon-bg: #{$primary};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 50%;
+    color: var(--bs-white);
+    background-color: var(--icon-bg);
+}
+
+.icon-user-score {
+    color: #{$brown};
+}
+.icon-user-no-score {
+    color: var(--bs-danger);
+}
