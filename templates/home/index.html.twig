@@ -1,15 +1,35 @@
-{% extends 'base.html.twig' %}
-
-{% block title %}Home{% endblock %}
+{% extends 'Layout/main.html.twig' %}
 
 {% block body %}
-    <div class="pink-stripe">
-        <h1>
-            Let's start coding&nbsp;&#129304;
-        </h1>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 shadow-md rounded bg-white p-5 text-center">
+                <h1>
+                    Welcome on
+                    <br>
+                    Drum & Music Online School
+                </h1>
+                <p>
+                    Vous trouverez ici tout ce qu’il faut pour apprendre la batterie.<br>
+                    Des parcours pour s’entraîner, jouer et progresser.
+                </p>
+                <a href="#" class="btn btn-primary">Démarrer</a>
+            </div>
+        </div>
     </div>
-    <div class="white-stripe">
-        <img src="{{ asset('build/images/LOGO_WILD_CODE_SCHOOL.png') }}"
-             alt="">
+    <div class="container">
+        <h2 class="text-center">Quelques exemples</h2>
+        <div class="">
+            {% for i in 0..3 %}
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Parcours {{loop.index}}</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ad, aspernatur eius facilis eligendi minima dolorum.
+                        </p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
     </div>
 {% endblock %}
