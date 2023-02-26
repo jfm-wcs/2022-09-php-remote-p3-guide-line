@@ -1,8 +1,8 @@
 #!/bin/sh
-set -e
+# set -e
 
 composer update
-yarn install
+yarn install --force
 yarn build
 
 ## Symfony configuration
