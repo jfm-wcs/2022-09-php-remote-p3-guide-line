@@ -6,7 +6,6 @@ services:
     container_name: ${PROJECT_NAME:-project}-web
     volumes:
       - ./:/var/www
-      - node_modules:/var/www/node_modules
     depends_on:
       - database
     restart: unless-stopped
@@ -71,7 +70,6 @@ networks:
     external: true
 
 volumes:
-  node_modules:
   ###> doctrine/doctrine-bundle ###
   db-data:
 ###< doctrine/doctrine-bundle ###
