@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block main %}
+    <div class="dashboard-wrapper">
+        {% include "include/_admin-navbar.html.twig" %}
+        <main>
+            {% block body %}{% endblock %}
+        </main>
+    </div>
+{% endblock %}

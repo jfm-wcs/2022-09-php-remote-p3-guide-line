@@ -1,0 +1,44 @@
+<nav>
+    <h1 class=" mb-4">
+		<a class="text-white" href="{{ path('home') }}">D<span>MOS</span></a>
+	</h1>
+	<ul>
+		{% set links = [
+			{
+				'text': 'Dashboard',
+				'icon': 'layer-group',
+				'path': path('dashboard_home_index'),
+				'controller': 'App\\Controller\\Dashboard\\DashboardController'
+			},
+			{
+				'text': 'Compétition',
+				'icon': 'medal',
+				'path': path('dashboard_course_index', {'slug': 'contest'}),
+				'controller': 'App\\Controller\\Dashboard\\CourseController'
+			},
+			{
+				'text': 'Entraînement',
+				'icon': 'drum',
+				'path': '#'
+			},
+			{
+				'text': 'Apprentissage',
+				'icon': 'graduation-cap',
+				'path': '#'
+			},
+			{
+				'text': 'Podium',
+				'icon': 'ranking-star',
+				'path': '#'
+			}
+		] %}
+		{% set _controller = app.request.attributes.get("_controller")|split('::') %}
+		{% for link in links %}
+			<li>
+				<a href="{{ link.path }}" class="{{ link.controller == _controller[0] ? 'active' : '' }}">
+					<i class="fas fa-{{ link.icon }} fa-fw" ></i><span>{{ link.text }}</span>
+				</a>
+			</li>
+		{% endfor %}
+	</ul>
+</nav>

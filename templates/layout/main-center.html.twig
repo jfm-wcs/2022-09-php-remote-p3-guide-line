@@ -1,0 +1,29 @@
+{% extends "base.html.twig" %}
+
+{% block main %}
+    <div class="main-wrapper">
+        {% include 'include/_main-navbar.html.twig' %}
+        {% for category, messages in app.flashes %}
+            {% for message in messages %}
+                <div class="alert alert-{{ category }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endfor %}
+        <div class="bg-image-40vh"></div>
+        <main>
+            <div class="container-fluid mb-5">
+                <div class="row">
+                    <div class="col-lg-4 offset-lg-4 shadow-md rounded bg-white p-5">
+                        <div class="row">
+                            <div class="col-lg-8 offset-lg-2">
+                                {% block body %}{% endblock %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        {% include 'include/_main-footer.html.twig' %}
+    </div>
+{% endblock %}

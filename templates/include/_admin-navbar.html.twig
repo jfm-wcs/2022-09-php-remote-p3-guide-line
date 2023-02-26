@@ -1,0 +1,15 @@
+<nav>
+    <h1 class="mb-4 fs-1">
+        <a class="text-white" href="">A<span>dmin</span></a>
+    </h1>
+    <ul>
+        <li class="mb-3"><a href="/" target="_blank"><i class="fas fa-home fa-fw"></i><span>Voir le site</span></a></li>
+        {% set navigation = [
+            {'url': path('admin_exercise_index'), 'icon': 'medal', 'title': 'Parcours'},
+            {'url': path('admin_exercise_index'), 'icon': 'drum', 'title': 'Exercices'}
+        ] %}
+        {% for nav in navigation %}
+            <li><a href="{{ nav.url }}" class="{{ current == nav.url ? 'active' }}"><i class="fas fa-{{ nav.icon }} fa-fw"></i><span>{{ nav.title }}</span></a></li>
+        {% endfor %}
+    </ul>
+</nav>
