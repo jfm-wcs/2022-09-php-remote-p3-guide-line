@@ -4,6 +4,7 @@ set -e
 composer update
 yarn install
 yarn build
+npx browserslist@latest --update-db
 
 ## Symfony configuration
 if [ ${APP_ENV} != "prod" ]; then
